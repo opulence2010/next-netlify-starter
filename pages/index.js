@@ -1,6 +1,17 @@
 import Head from 'next/head'
-import Header from '@components/Header'
 import Footer from '@components/Footer'
+
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from '@chakra-ui/react'
+
+
+
+
 
 export default function Home() {
   return (
@@ -10,12 +21,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+
+      <UnorderedList>
+        <ListItem>Lorem ipsum dolor sit amet</ListItem>
+        <ListItem>Consectetur adipiscing elit</ListItem>
+        <ListItem>Integer molestie lorem at massa</ListItem>
+        <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+      </UnorderedList>
+
+
 
       <Footer />
     </div>
